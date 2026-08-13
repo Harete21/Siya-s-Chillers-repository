@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations &amp; Contact | Siya's Chillers</title>
+  <meta name="description" content="Book a table at Siya's Chillers, Soweto. Find our address, opening hours, and click-to-call contact details.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="brand">Siya's <span>Chillers</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Reservations</a></li>
+        <li><a href="contact.html" class="nav-cta">Book a Table</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Reservations &amp; Contact</p>
+        <h1>Save your spot by the fire</h1>
+        <p>Book online in under a minute, or give us a call — either way, we'll have a table ready.</p>
+      </div>
+    </section>
+
+    <section class="section-cream">
+      <div class="wrap">
+        <div class="contact-grid">
+
+          <div>
+            <h2>Get in Touch</h2>
+            <p>Prefer to speak to someone? Tap the button below to call us directly.</p>
+            <a href="tel:+27110000000" class="btn btn-dark"> Click to Call: 011 000 0000</a>
+
+            <ul class="info-list">
+              <li>
+                
+                <div>
+                  <strong>Address</strong>
+                  <span>12 Vilakazi Street area, Orlando West, Soweto, Johannesburg</span>
+                </div>
+              </li>
+              <li>
+                
+                <div>
+                  <strong>Email</strong>
+                  <span>bookings@siyaschillers.co.za</span>
+                </div>
+              </li>
+              <li>
+                
+                <div>
+                  <strong>Facebook</strong>
+                  <span>facebook.com/siyaschillers</span>
+                </div>
+              </li>
+            </ul>
+
+            <h3 style="margin-top: 2em;">Opening Hours</h3>
+            <table class="hours-table">
+              <tr><td>Monday – Thursday</td><td>11:00 – 21:00</td></tr>
+              <tr><td>Friday – Saturday</td><td>11:00 – 23:00</td></tr>
+              <tr><td>Sunday</td><td>11:00 – 20:00</td></tr>
+            </table>
+
+            <div class="map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.7294208726103!2d27.904201676195274!3d-26.23797997705582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a74602c5d081%3A0x9f9cd2245d9ce54d!2sVilakazi%20St%2C%20Orlando%20West%2C%20Soweto%2C%201804!5e0!3m2!1sen!2sza!4v1786539587046!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Map showing Siya's Chillers location in Soweto">
+              </iframe>
+            </div>
+          </div>
+
+          <div>
+            <div class="booking-form">
+              <h2>Book a Table</h2>
+              <p style="font-size:0.9rem; color: rgba(36,26,19,0.65);">Fields marked * are required. We'll confirm your booking by phone or email.</p>
+
+              <div id="form-msg" class="form-msg"></div>
+
+              <form id="booking-form" novalidate>
+                <div class="form-row">
+                  <div class="field">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="field">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. 082 123 4567" required>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="optional, for confirmation">
+                </div>
+
+                <div class="form-row">
+                  <div class="field">
+                    <label for="date">Date *</label>
+                    <input type="date" id="date" name="date" required>
+                  </div>
+                  <div class="field">
+                    <label for="time">Time *</label>
+                    <select id="time" name="time" required>
+                      <option value="">Select a time</option>
+                      <option>11:00</option>
+                      <option>12:00</option>
+                      <option>13:00</option>
+                      <option>17:00</option>
+                      <option>18:00</option>
+                      <option>19:00</option>
+                      <option>20:00</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="guests">Number of Guests *</label>
+                  <select id="guests" name="guests" required>
+                    <option value="">Select party size</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7+</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="message">Special Requests</label>
+                  <textarea id="message" name="message" placeholder="Birthday celebration, allergies, seating preference…"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="sticky-reserve">
+    <a href="tel:+27110000000" class="btn btn-primary btn-block">Call to Book: 011 000 0000</a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Siya's <span>Chillers</span></p>
+          <p>Soweto's favourite neighbourhood chill spot for slow-grilled meats and good company, since 2015.</p>
+          <div class="footer-social">
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Reservations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <ul>
+            <li>Vilakazi Street area, Soweto, Johannesburg</li>
+            <li><a href="tel:+27110000000">011 000 0000</a></li>
+            <li>Open daily, 11:00 – 22:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Siya's Chillers. All rights reserved.</p>
+        <p>Website developed by Harete Motete &middot; Student No. ST10522453</p>
+      </div>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
