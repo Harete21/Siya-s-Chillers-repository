@@ -85,3 +85,21 @@ Technical Requirements
  
 
 Domain: siyaschillers.co.za. Hosting: local South African shared hosting for fast in-country load times. Development stack: HTML5, CSS3, and JavaScript, with an embedded booking widget (or Google Forms) for reservations.
+
+
+Changelog 
+
+new file:   about.html
+#	new file:   contact.html
+#	new file:   css/style.css
+#	new file:   documents/Screenshot 2026-08-27 164841.png
+#	new file:   documents/Siyas chillas content.docx
+#	new file:   documents/Siyaschillers Website proposal.docx
+#	new file:   documents/Website Approval Letter.docx
+#	new file:   gallery.html
+#	new file:   index.html
+#	new file:   menu.html
+#
+02 September 2026 14:39
+
+
