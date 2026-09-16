@@ -87,18 +87,25 @@ Technical Requirements
 Domain: siyaschillers.co.za. Hosting: local South African shared hosting for fast in-country load times. Development stack: HTML5, CSS3, and JavaScript, with an embedded booking widget (or Google Forms) for reservations.
 
 
-Changelog 
+# Changelog
 
-new file:   about.html
-#	new file:   contact.html
-#	new file:   css/style.css
-#	new file:   documents/Siyas chillas content.docx
-#	new file:   documents/Siyaschillers Website proposal.docx
-#	new file:   documents/Website Approval Letter.docx
-#	new file:   gallery.html
-#	new file:   index.html
-#	new file:   menu.html
+All notable changes to this project will be documented in this file.
+
+## [0.1.0] - 2026-09-16
+### Added
+- Initial theming and responsive stylesheet: `css/style.css` — warm terracotta, cream, deep green palette, variables, layout, header, nav, hero, cards, gallery grid, forms, buttons, footer, and accessibility focus styles.
+
+### Changed
+- Updated `h1` adjustments: attempted centering and enlargement, then reverted to normal flow (desktop 2rem, mobile 1.4rem).
+
+### Files modified
+- `css/style.css`
+
+### Notes
+- Please review `index.html`, `about.html`, `contact.html`, `gallery.html`, and `menu.html` in a browser to verify visual changes and request any tweaks (typography, spacing, or nav/mobile behavior).
+
+
 #
-02 September 2026 14:39
+16 September 2026 15:39 
 
 
