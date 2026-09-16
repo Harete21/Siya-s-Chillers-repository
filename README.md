@@ -92,7 +92,6 @@ Changelog
 new file:   about.html
 #	new file:   contact.html
 #	new file:   css/style.css
-#	new file:   documents/Screenshot 2026-08-27 164841.png
 #	new file:   documents/Siyas chillas content.docx
 #	new file:   documents/Siyaschillers Website proposal.docx
 #	new file:   documents/Website Approval Letter.docx
