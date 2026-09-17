@@ -101,8 +101,6 @@ All notable changes to this project will be documented in this file.
 ### Files modified
 - `css/style.css`
 
-### Notes
-- Please review `index.html`, `about.html`, `contact.html`, `gallery.html`, and `menu.html` in a browser to verify visual changes and request any tweaks (typography, spacing, or nav/mobile behavior).
 
 
 #
