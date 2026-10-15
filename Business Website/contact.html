@@ -6,15 +6,16 @@
   <title>Reservations &amp; Contact | Siya's Chillers</title>
   <meta name="description" content="Book a table at Siya's Chillers, Soweto. Find our address, opening hours, and click-to-call contact details.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="css/style.css">
-  <style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+   <style>
         ol{
             list-style: lower-alpha;
             padding-left:  25px;
             display:inline ;
         }
     </style>
-  
 </head>
 <body>
 
@@ -52,25 +53,25 @@
           <div>
             <h2>Get in Touch</h2>
             <p>Prefer to speak to someone? Tap the button below to call us directly.</p>
-            <a href="tel:+27110000000" class="btn btn-dark"> Click to Call: 011 000 0000</a>
+            <a href="tel:+27110000000" class="btn btn-dark">📞 Click to Call: 011 000 0000</a>
 
             <ul class="info-list">
               <li>
-                
+                <span class="ico">📍</span>
                 <div>
                   <strong>Address</strong>
                   <span>12 Vilakazi Street area, Orlando West, Soweto, Johannesburg</span>
                 </div>
               </li>
               <li>
-                
+                <span class="ico">✉️</span>
                 <div>
                   <strong>Email</strong>
                   <span>bookings@siyaschillers.co.za</span>
                 </div>
               </li>
               <li>
-                
+                <span class="ico">📘</span>
                 <div>
                   <strong>Facebook</strong>
                   <span>facebook.com/siyaschillers</span>
@@ -87,10 +88,10 @@
 
             <div class="map-embed">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.7294208726103!2d27.904201676195274!3d-26.23797997705582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a74602c5d081%3A0x9f9cd2245d9ce54d!2sVilakazi%20St%2C%20Orlando%20West%2C%20Soweto%2C%201804!5e0!3m2!1sen!2sza!4v1786539587046!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>"
+                src="https://www.google.com/maps?q=Vilakazi+Street,+Orlando+West,+Soweto&output=embed"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                title="Map showing Siya's Chillers location in Soweto">
+                title="Google Map showing Siya's Chillers location">
               </iframe>
             </div>
           </div>
@@ -161,6 +162,17 @@
                 <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
               </form>
             </div>
+              <div class="contact-form card" style="margin-top:1.5em;">
+                <h2>Send a Message</h2>
+                <p style="font-size:0.9rem; color: rgba(36,26,19,0.65);">General enquiries, feedback or media requests.</p>
+                <form id="contact-form" action="mailto:bookings@siyaschillers.co.za" method="post" enctype="text/plain" novalidate>
+                  <div class="field"><label for="c-name">Full Name *</label><input id="c-name" name="name" type="text" required></div>
+                  <div class="field"><label for="c-phone">Phone</label><input id="c-phone" name="phone" type="tel"></div>
+                  <div class="field"><label for="c-email">Email *</label><input id="c-email" name="email" type="email" required></div>
+                  <div class="field"><label for="c-message">Message *</label><textarea id="c-message" name="message" rows="4" required></textarea></div>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+              </div>
           </div>
 
         </div>
@@ -208,7 +220,6 @@
       </div>
     </div>
   </footer>
-
-  
+  <script src="js/main.js"></script>
 </body>
 </html>
