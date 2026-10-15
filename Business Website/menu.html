@@ -6,15 +6,15 @@
   <title>Menu | Siya's Chillers</title>
   <meta name="description" content="Browse the full Siya's Chillers menu — braai mains, sides, starters, drinks and desserts. Mobile-friendly, no PDF required.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <style>
+   <style>
         ol{
             list-style: lower-alpha;
             padding-left:  25px;
             display:inline ;
         }
     </style>
-  
 </head>
 <body>
 
@@ -55,6 +55,15 @@
           <a href="#drinks">Drinks</a>
           <a href="#desserts">Desserts</a>
         </nav>
+
+        <div class="menu-controls">
+          <input id="menu-search" placeholder="Search the menu (e.g. ribs, veg, chicken)" aria-label="Search menu">
+          <select id="menu-sort" aria-label="Sort menu">
+            <option value="">Sort</option>
+            <option value="price-asc">Price: low → high</option>
+            <option value="price-desc">Price: high → low</option>
+          </select>
+        </div>
 
         <div class="menu-category" id="starters">
           <h2>Starters</h2>
@@ -255,7 +264,7 @@
       </div>
     </div>
   </footer>
-
-  
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
