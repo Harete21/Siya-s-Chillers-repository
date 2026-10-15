@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enquire | Siya's Chillers</title>
+  <meta name="description" content="Enquire about services, products, volunteering or sponsorship at Siya's Chillers.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>body{background:var(--cream)}</style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="brand">Siya's <span>Chillers</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="section-cream">
+      <h1>Enquire About Services &amp; Support</h1>
+      <p>Use this form to ask about catering, sponsorship, volunteering or product supply.</p>
+
+      <form id="enquiry-form" class="contact-form" novalidate>
+        <div class="field"><label for="e-name">Full Name *</label><input id="e-name" name="name" type="text" required></div>
+        <div class="field"><label for="e-email">Email *</label><input id="e-email" name="email" type="email" required></div>
+        <div class="field"><label for="e-type">Enquiry Type *</label>
+          <select id="e-type" name="type" required>
+            <option value="">Select</option>
+            <option value="catering">Catering / Events</option>
+            <option value="supply">Product Supply</option>
+            <option value="volunteer">Volunteering</option>
+            <option value="sponsor">Sponsorship</option>
+          </select>
+        </div>
+        <div class="field"><label for="e-date">Preferred Date (if relevant)</label><input id="e-date" name="date" type="date"></div>
+        <div class="field"><label for="e-details">Details *</label><textarea id="e-details" name="details" rows="5" required></textarea></div>
+        <div id="enquiry-response" class="card" style="display:none"></div>
+        <button type="submit" class="btn btn-primary">Get Estimate</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap"><p>&copy; <span id="year"></span> Siya's Chillers</p></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Local handler for enquiry form to show estimate
+    (function(){
+      var form = document.getElementById('enquiry-form');
+      var resp = document.getElementById('enquiry-response');
+      form.addEventListener('submit', function(e){
+        e.preventDefault(); if(!form.checkValidity()){ form.reportValidity(); return; }
+        var type = form['type'].value;
+        var name = form['name'].value;
+        var base = 0; var note = '';
+        if(type==='catering'){ base = 500; note='Base venue catering fee' }
+        if(type==='supply'){ base = 250; note='Per-product estimate' }
+        if(type==='volunteer'){ base = 0; note='Volunteer intake will be scheduled' }
+        if(type==='sponsor'){ base = 1000; note='Sponsorship package estimate' }
+        resp.style.display='block'; resp.innerHTML = '<h3>Estimate for '+name+'</h3><p>'+ (base?('Estimated starting cost: R'+base):'No fee — we will contact you.') +'</p><p class="muted">'+note+'</p>';
+      });
+    })();
+  </script>
+</body>
+</html>
