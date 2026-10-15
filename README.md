@@ -132,7 +132,6 @@ his README lists changes made for Part 3 (interactive features, forms, SEO and s
 ## Notes & Next Steps
 
 - Testing: Open `index.html`, `menu.html`, `gallery.html` and `contact.html` locally in a browser to interact with features.
-- The Leaflet map uses OpenStreetMap tiles; it requires network access. Adjust coordinates in `js/main.js` if needed.
 - Replace the placeholder URLs in `sitemap.xml` with your GitHub Pages or hosted site URLs before publishing.
 
 
